@@ -55,14 +55,14 @@ int main()
     cout << "--------DETAILS  OF  LECTURE--------" << endl;
     cout << endl;
 
-    lectureDetail lectures[5];
-
-    // initialize value -- using constructor
-    lectures[0] = lectureDetail("Jaydeep sir", "OOP Concept", "SE", 50);
-    lectures[1] = lectureDetail("Snehal Ma'am", "C language", "BCA", 40);
-    lectures[2] = lectureDetail("Nikhil Sir", "HTML", "BCA-2", 45);
-    lectures[3] = lectureDetail("Vaishali Ma'am", "Economics", "BA", 40);
-    lectures[4] = lectureDetail("Jagruti Ma'am", "Mathematics", "B.Com", 55);
+    // initilize lecture with array
+    lectureDetail lectures[5] =
+        {
+            lectureDetail("Jaydeep sir", "OOP Concept", "SE", 50),
+            lectureDetail("Snehal Ma'am", "C language", "BCA", 40),
+            lectureDetail("Nikhil Sir", "HTML", "BCA-2", 45),
+            lectureDetail("Vaishali Ma'am", "Economics", "BA", 40),
+            lectureDetail("Jagruti Ma'am", "Mathematics", "B.Com", 55)};
 
     // display lecture detail -- for loop
 
